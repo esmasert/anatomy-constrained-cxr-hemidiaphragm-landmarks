@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the work below."
+title: "anatomy-constrained-cxr-hemidiaphragm-landmarks"
+version: "1.0.0"
+authors:
+  - family-names: "Sert"
+    given-names: "Esma"
+    affiliation: "University College London"
+  - family-names: "Azimbagirad"
+    given-names: "Mehran"
+    affiliation: "University College London"
+  - family-names: "Onah"
+    given-names: "Daniel"
+    affiliation: "University College London"
+  - family-names: "Alexander"
+    given-names: "Daniel C."
+    affiliation: "University College London"
+  - family-names: "Jacob"
+    given-names: "Joseph"
+    affiliation: "University College London"
+  - family-names: "Aslani"
+    given-names: "Shahab"
+    affiliation: "University College London"
+repository-code: "https://github.com/<kullanici>/anatomy-constrained-cxr-hemidiaphragm-landmarks"
+license: "Apache-2.0"
+keywords:
+  - medical-imaging
+  - chest-xray
+  - landmark-detection
+  - hemidiaphragm
+  - heatmap-regression
+  - pytorch
+preferred-citation:
+  type: unpublished
+  title: "Accessible Hemidiaphragm Landmark Localisation on Chest X-Ray Images Using Deep Learning and Anatomical Constraints"
+  authors:
+    - family-names: "Sert"
+      given-names: "Esma"
+    - family-names: "Azimbagirad"
+      given-names: "Mehran"
+    - family-names: "Onah"
+      given-names: "Daniel"
+    - family-names: "Alexander"
+      given-names: "Daniel C."
+    - family-names: "Jacob"
+      given-names: "Joseph"
+    - family-names: "Aslani"
+      given-names: "Shahab"
+  year: 2025
+  notes: "Submitted to IEEE ISBI 2026"
+
