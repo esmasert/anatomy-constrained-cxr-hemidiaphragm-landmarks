@@ -58,7 +58,29 @@ Report segmentation Dice/IoU and landmark error metrics (mean/median pixel error
 
 ## 📈 Results
 
-Add your validation/test results here, including:
+### Post-processing Effectiveness
+
+Post-processing was applied to improve anatomical consistency of the predicted lung masks before landmark localisation. Convex hull completion and morphological closing helped reduce segmentation artefacts and improved the reliability of the heatmap-based landmark predictions.
+
+<p align="center">
+  <img src="assets/postprocessing.png" width="900">
+</p>
+
+<p align="center">
+  <b>Figure 2.</b> Example of post-processing effectiveness. Predicted masks and heatmaps are shown before and after post-processing, demonstrating improved anatomical consistency and reduced hemidiaphragm error.
+</p>
+
+### Model Reliability and Grad-CAM Analysis
+
+Grad-CAM visualisations were used to inspect whether classification models relied on clinically meaningful lung regions. Although the classifier achieved high accuracy, several heatmaps showed attention outside the lung boundaries, highlighting the importance of anatomical constraints and interpretability checks.
+
+<p align="center">
+  <img src="assets/gradcam.png" width="900">
+</p>
+
+<p align="center">
+  <b>Figure 3.</b> Grad-CAM overlays showing model attention on segmented chest X-rays. Some predictions rely on non-anatomical or clinically irrelevant regions outside the lung boundaries.
+</p>
 
 ### Segmentation Metrics
 - **Dice coefficient** and **IoU** on lung masks
