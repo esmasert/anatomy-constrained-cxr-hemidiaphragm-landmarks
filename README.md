@@ -6,6 +6,16 @@ An open baseline for hemidiaphragm landmark localisation on chest X-rays using a
 
 ## Overview
 
+This repository implements an anatomy-constrained chest X-ray pipeline for hemidiaphragm landmark localisation. The method first segments the lung fields and then applies a two-stage heatmap regression model to localise left and right hemidiaphragm landmarks.
+
+<p align="center">
+  <img src="assets/pipeline.png" width="900">
+</p>
+
+<p align="center">
+  <b>Figure 1.</b> Automated pipeline for hemidiaphragm landmark localisation: U-Net-based lung segmentation followed by two-stage heatmap regression and landmark extraction.
+</p>
+
 - **Anatomy-aware approach** combining lung segmentation with heatmap-based landmark localisation
 - **Reproducible pipeline** with preprocessing, training, testing, and evaluation stages
 - **Modular structure** to plug in different backbones or training regimes
